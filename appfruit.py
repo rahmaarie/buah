@@ -33,12 +33,6 @@ def app():
         # Display the result
         st.write(f"Predicted Fruit: {predicted_name[0]}")
         
-        # Option to show more info (optional)
-        st.markdown("### Model Evaluation (on test data)")
-        
-        # Accuracy report
-        # The model and evaluation could also be shown here based on the previously saved evaluation output
-        st.write(f"Accuracy: {0.88:.2f}")  # Change with actual evaluation results if desired
 
 # Run the application
 if __name__ == '__main__':
