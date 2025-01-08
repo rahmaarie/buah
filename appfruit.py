@@ -14,11 +14,11 @@ def app():
     # Input fields for the user to enter data
     st.header('Enter the fruit features for prediction:')
     
-    diameter = st.number_input('Diameter of the fruit (cm)', min_value=0.0)
-    weight = st.number_input('Weight of the fruit (grams)', min_value=0.0)
-    red = st.number_input('Red color intensity (0-255)', min_value=0, max_value=255)
-    green = st.number_input('Green color intensity (0-255)', min_value=0, max_value=255)
-    blue = st.number_input('Blue color intensity (0-255)', min_value=0, max_value=255)
+    diameter = st.slider('Diameter of the fruit (cm)', min_value=0.0)
+    weight = st.slider('Weight of the fruit (grams)', min_value=0.0)
+    red = st.slider('Red color intensity (0-255)', min_value=0, max_value=255)
+    green = st.slider('Green color intensity (0-255)', min_value=0, max_value=255)
+    blue = st.slider('Blue color intensity (0-255)', min_value=0, max_value=255)
     
     # When the user presses the predict button
     if st.button('Predict'):
